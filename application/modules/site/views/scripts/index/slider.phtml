@@ -1,0 +1,20 @@
+<section class="banner-main">
+    <div class="container">
+        <?php foreach ($this->banners as $banner) :?>
+            <h1 class="banner-main-text">
+                <?php
+                $description = explode(PHP_EOL, $banner['description']);
+                foreach ($description as $line) : ?>
+                    <?php echo $line;?>
+                <?php endforeach; ?>
+            </h1>
+            <div class="social">
+                <a href="#" title="Facebook"><i class="icon-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="icon-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="icon-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="icon-youtube"></i></a>
+                <a href="#" title="Pinterest"><i class="icon-pinterest"></i></a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</section>

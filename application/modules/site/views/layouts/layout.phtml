@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="<?php echo $this->serverUrl() . BASEDIR; ?>/res/imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo $this->serverUrl() . BASEDIR; ?>/res/imgs/favicon.ico" type="image/x-icon">
+
+    <title>2 Clics Comunicação</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="<?php echo $this->serverUrl() . BASEDIR; ?>/res/css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<?php echo $this->render('header.phtml'); ?>
+<!-- HEADER -->
+
+<?php echo $this->layout()->content;?>
+
+<section id="agencia" class="sobre">
+    <div class="container-bg">
+        <div class="container-square"></div>
+    </div>
+    <div class="container">
+        <div>
+            <h2 class="tit-section">Ouse +</h2>
+            <p>Somos uma empresa de ideias, que conecta o cliente com o seu público, através da construção de relacionamentos, onde a base é a confiança e a lealdade, integrando a comunicação de forma personalizada e eficaz ao nosso cliente.</p>
+            <p>Nosso objetivo é inserir a marca dentro do contexto de seus consumidores, identificando onde ele vive, busca informações e de que forma podemos transforma-lo em um divulgador, pois consumidores apaixonados praticam a forma mais antiga já conhecida no mundo, o boca a boca, desenvolvendo um olhar particular para cada cliente, entendendo a sua necessidade.</p>
+            <p>Acreditamos na ousadia, que em um mercado cada vez mais competitivo, fragmentado e dinâmico, inovar não é mais uma questão de escolha, é uma necessidade constante.</p>
+        </div>
+    </div>
+</section>
+
+<section class="especialidades">
+    <div class="container">
+        <h2 class="tit-section text-center">Somos especialistas em:</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="especialidade-item">
+                    <h3><i class="icon-connection"></i> Branding</h3>
+                    <p>Construímos marcas sólidas, através de uma metodologia de estudo e gerenciamento, criando um universo que traduz a sua existência, maximizando a receita e agregando valor ao ativo da marca..</p>
+                </div>
+                <div class="especialidade-item">
+                    <h3><i class="icon-social"></i> Campanhas</h3>
+                    <p>Desafiamos a concorrência a competir com nossos clientes. A pesquisa, planejamento, execução e acompanhamento, direcionam as campanhas que devem ser criadas, dando o norte necessário que o cliente precisa para conquistar o seu lugar no mercado. Indicam o posicionamento da marca e a fatia do mercado que será conquistada, para isso, com uma equipe multidisciplinar, integramos os recursos da comunicação e marketing em formato único para cada cliente, atendendo sua necessidade e entregando um vasto caminho de ideias.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="especialidade-item">
+                    <h3><i class="icon-power"></i> Comunicação digital</h3>
+                    <p>Conectamos o seu negócio, com a promoção de grandes transformações culturais, a internet mudou a forma como as pessoas se relacionam e consomem, mais do que nunca, estar na web é uma necessidade.  Estamos atentos às novas tecnologias e tendências para criar estratégias que colocam a sua empresa no domínio digital convergindo com os outros canais. </p>
+                </div>
+                <div class="especialidade-item">
+                    <h3><i class="icon-social"></i> Design Estratégico</h3>
+                    <p>Entendemos que o design é uma forma de agregar valor a uma marca. Mais do que uma ferramenta de diferenciação, ele traduz e fixa os valores de um produto ou serviço para o consumidor, além de aumentar sua competitividade diante de um mercado extremamente exigente.         </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="criatividade">
+    <div class="slogan-criatividade">
+        <h2>
+            Expandindo
+            criatividade.
+            Inovando
+            ideias.
+        </h2>
+    </div>
+</section>
+
+<section id="clientes" class="clientes">
+    <div class="container">
+        <h2 class="tit-section text-center">Clientes</h2>
+        <div class="slider-clientes">
+            <div class="slide">
+                <div class="col-xs-6 col-md-4">
+                    <div class="cliente">
+                        <a href="javascript:;" class="open-modal"><img src="http://placehold.it/350x150"></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="cliente">
+                        <a href="javascript:;" class="open-modal"><img src="http://placehold.it/150x300/cc931e/cc000e"></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="cliente">
+                        <a href="javascript:;" class="open-modal"><img src="http://placehold.it/300x100"></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="cliente">
+                        <a href="javascript:;" class="open-modal"><img src="http://placehold.it/310x130"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="trabalhos" class="trabalhos">
+    <div class="container">
+        <h2 class="tit-section text-center">Trabalhos</h2>
+        <div class="filtros">
+            <a href="javascript:;" class="btn filter" data-filter="all">Tudo</a>
+            <a href="javascript:;" class="btn filter" data-filter=".design">Design</a>
+            <a href="javascript:;" class="btn filter" data-filter=".digital">Digital</a>
+            <a href="javascript:;" class="btn filter" data-filter=".brand">Brand</a>
+            <a href="javascript:;" class="btn filter" data-filter=".editoracao">Editoração</a>
+            <a href="javascript:;" class="btn filter" data-filter=".audiovisual">Audiovisual</a>
+        </div>
+        <div class="row list-trabalhos">
+            <div class="col-xs-6 col-sm-4 col-md-3 mix">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="#" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 mix design">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="javascript:;" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 mix design">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="javascript:;" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 mix brand">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="javascript:;" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 mix editoracao">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="javascript:;" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 mix audiovisual">
+                <div class="trabalho" style="background-image: url(http://placehold.it/310x130)">
+                    <a href="javascript:;" class="trabalho-overlay open-modal">
+                        <h4>
+                            <strong>Lcitudin, lorem quis bibendum auctor, </strong>
+                            Design
+                        </h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="news" class="news">
+    <div class="container">
+        <h2 class="tit-section text-center">News</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 news-item">
+                <div class="date-news">
+                    <h5>12.01.2016</h5>
+                </div>
+                <h4>Haribeatius aperi odit faceatiunt as rem. </h4>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta commolu ptatem. Desequam, vollupt atiusto rrupid et lam asinte con perehenim que vel invenia non plaborerchil mos simusam, odit ea is et digent maximai onesto</p>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta com</p>
+                <a href="#" class="fl-right">Continue lendo</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 news-item">
+                <div class="date-news">
+                    <h5>12.01.2016</h5>
+                </div>
+                <h4>Haribeatius aperi odit faceatiunt as rem. </h4>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta commolu ptatem. Desequam, vollupt atiusto rrupid et lam asinte con perehenim que vel invenia non plaborerchil mos simusam, odit ea is et digent maximai onesto</p>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta com</p>
+                <a href="#" class="fl-right">Continue lendo</a>
+            </div>
+            <div class="col-xs-12 col-sm-4 news-item">
+                <div class="date-news">
+                    <h5>12.01.2016</h5>
+                </div>
+                <h4>Haribeatius aperi odit faceatiunt as rem. </h4>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta commolu ptatem. Desequam, vollupt atiusto rrupid et lam asinte con perehenim que vel invenia non plaborerchil mos simusam, odit ea is et digent maximai onesto</p>
+                <p>Unt volestem venitatiorem quia velent auda vel eturessunt ad endit ut et latiur aut il idem explabor alis et, ut auta com</p>
+                <a href="#" class="fl-right">Continue lendo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <iframe class="contato-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.0821032628355!2d-51.18759198426168!3d-29.919538432439875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa5f4b65fc1%3A0xd4e77077d3078f01!2zMiBDbGljcyBDb211bmljYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1451235185078" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="container">
+        <div class="contato-item">
+            <div class="nav-tabs">
+                <ul>
+                    <li><a href="#form-agencia" class="btn-agencia">Faça parte da agência</a></li>
+                    <li class="current"><a href="#form-contato" class="btn-contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="form-contato" class="contato-inside form-contato">
+                    <h4>Contato</h4>
+                    <p>
+                        R. Dr. Barcelos, 921 - Sala 405 | Centro <br>
+                        Canoas - RS | <strong>(51) 3472-1148</strong> <br>
+                        <strong>contato@2clicscomunicacao.com.br</strong>
+                    </p>
+
+                    <div class="social-contato">
+                        <a href="#"><i class="icon-facebook"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="#" class="btn-news">newslatter</a>
+                    </div>
+
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea cols="0" rows="0" class="form-control" placeholder="Em que podemos ajudá-lo?"></textarea>
+                        </div>
+                        <input type="submit" value="enviar">
+                    </form>
+                </div>
+                <div id="form-agencia" class="contato-inside form-agencia">
+                    <h4>Faça parte da agência</h4>
+                    <p>
+                        Estamos sempre à procura de mentes inquietas para fazer parte da nossa equipe.
+                        Gostou? Então conte-nos um pouco mais sobre você.
+                    </p>
+
+                    <form action="#">
+                        <div class="inside-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="O que você faz?">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Área pretendida">
+                            </div>
+                            <div class="form-group">
+                                <div class="input-file">
+                                    <input type="file">
+                                    <a href="#">enviar currículo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <h6>2015 <span>2Clics Comunicação | Todos os direitos reservados</span></h6>
+    </div>
+</footer>
+
+<div class="modal">
+    <!-- DIV REMOVIDA AO FECHAR A MODAL -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <div class="fl-left">
+                <h4>
+                    Nome do projeto
+                    <small>Nome do cliente</small>
+                </h4>
+            </div>
+            <div class="fl-right">
+                <img src="imgs/logo.png" alt="2 Clics Comunicação">
+            </div>
+            <a href="javascript:;" class="close-modal">X</a>
+        </div>
+        <div class="modal-body">
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/52erg5epUA8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/52erg5epUA8" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>
+                <strong>Diretor de Criação:</strong> Riciély Soares <br>
+                <strong>Diretor de Arte:</strong> Rafael Woyciekowski <br>
+                <strong>Planejamento:</strong> Elisandro da Silva
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="<?php echo $this->serverUrl() . BASEDIR; ?>/res/js/main.min.js"></script>
+</body>
+</html>

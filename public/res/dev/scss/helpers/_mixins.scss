@@ -1,0 +1,209 @@
+//////
+// - MIXINS
+// Funcoes para botoes, modal, border-radius...
+//////
+
+
+//
+// Border Radius
+//
+
+@mixin border-radius($border-radius: $border-radius-base) {
+  border-radius: $border-radius;
+}
+
+
+//
+// Text Overflow
+//
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+//
+// Size
+//
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+
+//
+// Vertical Align
+// Requer que o pai do elemente tenha altura fixa.
+
+@mixin vertical-align($position: -50%) {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY($position);
+  -ms-transform: translateY($position);
+  transform: translateY($position);
+}
+
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: ''; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Placeholder text
+@mixin placeholder($color: #fff) {
+  &::-moz-placeholder           { color: $color;   // Firefox
+    opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+
+
+//
+// Grid system
+// Gera as classes do sistema de grid
+
+// Centered container element
+@mixin container-fixed($gutter: $grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @include clearfix();
+}
+
+// Cria a classe .row
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ($gutter / -2);
+  margin-right: ($gutter / -2);
+  @include clearfix();
+}
+
+// Tamanho Extra-small
+@mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage(($columns / $grid-columns));
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+//@mixin make-xs-column-offset($columns) {
+//  margin-left: percentage(($columns / $grid-columns));
+//}
+//@mixin make-xs-column-push($columns) {
+//  left: percentage(($columns / $grid-columns));
+//}
+//@mixin make-xs-column-pull($columns) {
+//  right: percentage(($columns / $grid-columns));
+//}
+
+
+// Tamanho: pequeno
+@mixin make-sm-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-sm-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+//@mixin make-sm-column-offset($columns) {
+//  @media (min-width: $screen-sm-min) {
+//    margin-left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-sm-column-push($columns) {
+//  @media (min-width: $screen-sm-min) {
+//    left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-sm-column-pull($columns) {
+//  @media (min-width: $screen-sm-min) {
+//    right: percentage(($columns / $grid-columns));
+//  }
+//}
+
+
+// Tamanho: médio
+@mixin make-md-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-md-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+//@mixin make-md-column-offset($columns) {
+//  @media (min-width: $screen-md-min) {
+//    margin-left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-md-column-push($columns) {
+//  @media (min-width: $screen-md-min) {
+//    left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-md-column-pull($columns) {
+//  @media (min-width: $screen-md-min) {
+//    right: percentage(($columns / $grid-columns));
+//  }
+//}
+
+// Tamanho: grande
+@mixin make-lg-column($columns, $gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-lg-min) {
+    float: left;
+    width: percentage(($columns / $grid-columns));
+  }
+}
+//@mixin make-lg-column-offset($columns) {
+//  @media (min-width: $screen-lg-min) {
+//    margin-left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-lg-column-push($columns) {
+//  @media (min-width: $screen-lg-min) {
+//    left: percentage(($columns / $grid-columns));
+//  }
+//}
+//@mixin make-lg-column-pull($columns) {
+//  @media (min-width: $screen-lg-min) {
+//    right: percentage(($columns / $grid-columns));
+//  }
+//}

@@ -1,0 +1,64 @@
+//////
+// - CLASSES
+// Classes de apoio (Float, display...)
+//////
+
+
+// Float e clear
+
+.fl-left   { float: left !important;  }
+.fl-right  { float: right !important; }
+.fl-none   { float: none !important;  }
+
+.clear-both   { clear: both !important;  }
+.clear-left   { clear: left !important;  }
+.clear-right  { clear: right !important; }
+.clear-none   { clear: none !important;  }
+
+.clearfix {
+  @include clearfix();
+}
+
+
+// Display
+
+.disp-block        { display: block;        }
+.disp-inline-block { display: inline-block; }
+.disp-inline       { display: inline;       }
+.disp-none         { display: none;         }
+
+
+// Overflow
+
+.overflow-hidden   { overflow: hidden !important;  }
+.overflow-visible  { overflow: visible !important; }
+.overflow-auto     { overflow: auto !important;    }
+.overflow-scroll   { overflow: scroll !important;  }
+
+
+// Margin e padding
+
+.no-margin          { margin: 0 !important;          }
+.no-margin-left     { margin-left: 0 !important;     }
+.no-margin-right    { margin-right: 0 !important;    }
+.no-margin-bottom   { margin-bottom: 0 !important;   }
+.no-margin-top      { margin-top: 0 !important;      }
+
+.no-padding         { padding: 0 !important;         }
+.no-padding-left    { padding-left: 0 !important;    }
+.no-padding-right   { padding-right: 0 !important;   }
+.no-padding-bottom  { padding-bottom: 0 !important;  }
+.no-padding-top     { padding-top: 0 !important;     }
+
+
+// Text Align
+
+.text-left     { text-align: left !important;    }
+.text-right    { text-align: right !important;   }
+.text-justify  { text-align: justify !important; }
+.text-center   { text-align: center !important;  }
+
+
+// Image
+
+.img-responsive { max-width: 100%; display: block; }

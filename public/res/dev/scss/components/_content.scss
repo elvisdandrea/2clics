@@ -1,0 +1,732 @@
+
+
+@media (min-width: $screen-sm-min) {
+  body > section  {
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  body > section  {
+    padding: 80px 0;
+  }
+}
+
+
+//
+// Banner principal
+//
+
+.banner-main {
+  background: url("../imgs/banner-home.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.banner-main-text {
+  color: #fff;
+  bottom: 120px;
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .75);
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 7rem;
+  }
+}
+
+
+// Social
+
+.social {
+  bottom: 20px;
+  position: absolute;
+  right: 10px;
+
+  a {
+    color: #fff;
+    display: inline-block;
+    font-size: 2.3rem;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    a {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+
+
+//
+// Sobre
+//
+
+.sobre {
+  padding: 0;
+  background: url("../imgs/bg-agencia.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+
+  .container {
+    background-color: rgba(255, 255, 255, .8);
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .tit-section {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    background-attachment: fixed;
+
+    p {
+      font-size: 1.8rem;
+    }
+
+    .container {
+      background-color: transparent;
+      padding: 50px;
+
+      div {
+        max-width: 420px;
+      }
+
+      .tit-section {
+        margin-top: 0;
+      }
+    }
+
+    .container-bg {
+      background-color: #fff;
+      height: 100%;
+      position: absolute;
+      width: calc(100% - 300px);
+
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 320px 0 320px 150px;
+        border-color: transparent transparent transparent #ffffff;
+        position: absolute;
+        left: 100%;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .container {
+      padding: 70px;
+    }
+
+    .container-bg {
+      width: calc(90% - 550px);
+
+      &:after {
+        border-width: 340px 0 340px 380px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .container {
+      padding: 160px 70px;
+    }
+
+    .container-bg {
+      width: calc(80% - 550px);
+
+      &:after {
+        border-width: 430px 0 430px 380px;
+      }
+    }
+  }
+}
+
+
+
+//
+// Título das seções
+//
+
+.tit-section {
+  font-size: 3.9rem;
+  font-weight: normal;
+  font-style: italic;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 6rem;
+  }
+}
+
+
+
+//
+// Especialidades
+//
+
+.especialidades {
+  background: url("../imgs/bg-especialidades.jpg") no-repeat center;
+  background-size: cover;
+
+  .container {
+    overflow: hidden;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .row {
+      margin-right: -80px;
+      margin-left: -80px;
+
+      > div {
+        padding-right: 80px;
+        padding-left: 80px;
+      }
+    }
+  }
+}
+
+.especialidade-item {
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-top: 0;
+    font-style: italic;
+  }
+
+  i {
+    color: $brand-default;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    h3 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+
+//
+// Criatividade
+//
+
+.criatividade {
+  background: url("../imgs/bg-criatividade.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.slogan-criatividade {
+  @include square(280px);
+  border-radius: 100%;
+  border: 3px solid #fff;
+  margin: 30px auto;
+  padding: 41px;
+
+  h2 {
+    color: #fff;
+    font-size: 3.7rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 75px;
+    @include square(450px);
+
+    h2 {
+      font-size: 5.7rem;
+    }
+  }
+}
+
+
+
+//
+// Clientes
+//
+
+.clientes {
+  padding-bottom: 60px;
+}
+
+.cliente {
+  height: 140px;
+  margin-bottom: 20px;
+
+  a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  &:hover {
+    img {
+      filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+  }
+
+  img {
+    display: inline-block !important;
+    max-width: 100%;
+    max-height: 100%;
+
+    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    transition: 200ms;
+
+    @include vertical-align();
+  }
+}
+
+
+//
+// Trabalhos
+//
+
+.list-trabalhos {
+  .mix {
+    display: none;
+  }
+}
+
+
+// Filtros
+
+.filtros {
+  margin-bottom: 30px;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .btn {
+    border-bottom: 4px solid transparent;
+    color: $text-color;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 5px 15px;
+    text-decoration: none;
+
+    &.active {
+      border-bottom-color: $brand-default;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    overflow: hidden;
+    margin: 40px 0 70px;
+    padding: 0;
+
+    .btn {
+      float: left;
+      width: 16.666%;
+      font-size: 1.8rem;
+      text-align: center;
+      border-bottom-width: 6px;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin: 60px 0 130px;
+  }
+}
+
+
+// Trabalho item
+
+.trabalho {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  a {
+    background-color: rgba(200, 144, 29, .3);
+    color: #000;
+    height: 100%;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+    opacity: 0;
+
+    transition: 200ms;
+
+    &:after {
+      bottom: 0;
+      content: '';
+      display: block;
+      right: 0;
+      position: absolute;
+      opacity: .3;
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 60px 60px;
+      border-color: transparent transparent #b6831a transparent;
+    }
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+
+  strong {
+    display: block;
+  }
+
+  @media (min-width: $screen-sm-min) {
+
+    h4 {
+      font-size: 2.2rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    a {
+      padding-top: 50px;
+    }
+
+    &:hover {
+      a {
+        background-color: rgba(200, 144, 29, 1);
+        opacity: 1;
+
+        &:after {
+          border-width: 0 0 180px 180px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+//
+// News
+//
+
+.news {
+
+  @media (min-width: $screen-md-min) {
+    .row {
+      margin-right: -35px;
+      margin-left: -35px;
+
+      > div {
+        padding-right: 35px;
+        padding-left: 35px;
+      }
+    }
+  }
+}
+
+.news-item {
+  margin-bottom: 40px;
+
+  h4 {
+    font-size: 2.6rem;
+    font-weight: normal;
+    margin: 20px 0 0;
+  }
+
+  p {
+    font-family: 'Segoe', Arial, sans-serif;
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  @media (min-width: $screen-md-min) {
+
+    h4 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.date-news {
+  border-bottom: 5px solid $brand-default;
+
+  h5 {
+    margin: 5px 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+}
+
+
+
+//
+// Contato
+//
+
+.contato {
+  position: relative;
+
+  @media (min-width: $screen-sm-min) {
+    overflow: hidden;
+
+    .container {
+      max-width: 396px !important;
+      margin: 0;
+      overflow: hidden;
+      float: left;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .container {
+      left: 35px;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .container {
+      left: 155px;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .container {
+      left: 155px;
+    }
+  }
+}
+
+.contato-item {
+  margin: 10px 0;
+  position: relative;
+  max-width: 340px;
+}
+
+// Abas
+
+.nav-tabs {
+  position: relative;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    z-index: 10;
+    width: 180px;
+    text-align: center;
+
+    &.current {
+      position: absolute;
+      z-index: 9;
+      top: 0;
+    }
+  }
+
+  a {
+    display: block;
+    height: 37px;
+    line-height: 2.3;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: 267px;
+    top: 72px;
+    position: absolute;
+  }
+}
+
+.btn-agencia {
+  background-color: #b17e19;
+  color: #464441;
+}
+
+.btn-contato {
+  background-color: #464441;
+  color: #b17e19;
+}
+
+// Formulário de contato
+
+.form-contato {
+  background-color: #464441;
+  border: 2px solid #b17e19;
+  color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  max-width: 340px;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+
+  h4 {
+    font-style: italic;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Seoge Light', Arial, sans-serif;
+  }
+
+  input[type="submit"] {
+    background-color: #d4caca;
+    border: 0;
+    color: $text-color !important;
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 2px;
+    width: 125px;
+    text-align: center;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding: 20px;
+  }
+}
+
+.contato-map {
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $screen-sm-min) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.social-contato {
+  margin: 10px 0;
+  overflow: hidden;
+
+  a {
+    color: #fff;
+    float: left;
+    margin-right: 10px;
+  }
+
+  i {
+    font-size: 2.3rem;
+  }
+}
+
+.btn-news {
+  background-color: #d4caca;
+  color: $text-color !important;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 2px;
+  width: 64%;
+  text-align: center;
+  margin: 0 !important;
+}
+
+
+// Agência
+.form-agencia {
+  background-color: #b17e19;
+  border: 2px solid #464441;
+  display: none;
+  padding: 10px;
+  border-radius: 2px;
+  max-width: 340px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+
+  .inside-form {
+    height: 339px;
+    margin-top: 10px;
+  }
+
+  h4 {
+    font-style: italic;
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Seoge Light', Arial, sans-serif;
+  }
+
+  input[type="submit"] {
+    background-color: #504e4f;
+    border: 0;
+    color: $brand-default;
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 2px;
+    width: 125px;
+    text-align: center;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding: 20px;
+  }
+}

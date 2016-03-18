@@ -1,0 +1,137 @@
+
+//
+// Header
+//
+
+.header {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  transition: 200ms;
+
+  .down & {
+    background-color: $brand-default;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .down & {
+      background: $brand-default url("../imgs/bg-header.png") no-repeat left top;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    padding-top: 40px;
+
+    .down & {
+      padding-top: 0;
+    }
+  }
+}
+
+
+
+//
+// Logo
+//
+
+.logo {
+  text-align: left;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  img {
+    display: inline-block;
+    height: 45px;
+    transition: 400ms;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    float: left;
+    width: auto;
+    
+    img {
+      height: 70px;
+    }
+
+    .down & {
+      margin: 12px 0 7px 0;
+
+      img {
+        height: 45px;
+      }
+    }
+  }
+}
+
+
+//
+// Menu
+//
+
+.menu {
+  background-color: $brand-default;
+  left: 0;
+  right: 0;
+  padding: 70px 10px 10px;
+  position: absolute;
+  top: -300px;
+  opacity: 0;
+
+  transition: 400ms;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.open {
+    top: 0;
+    opacity: 1;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    float: right;
+    padding: 10px 10px;
+    position: relative;
+    top: 25px;
+    opacity: 1;
+
+    .down & {
+      background-color: transparent;
+      top: 14px;
+    }
+  }
+}
+
+.menu-item {
+  display: block;
+  list-style: none;
+  text-align: center;
+
+  a {
+    color: #fff;
+    display: block;
+    font-size: $font-size-base;
+    padding: .4em 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    display: inline-block;
+    margin-right: -3px;
+    border-right: 1px solid #fff;
+
+    &:last-child {
+      border: 0;
+    }
+
+    a {
+      padding: 0;
+      margin: 0 5px;
+      line-height: 1;
+    }
+  }
+}

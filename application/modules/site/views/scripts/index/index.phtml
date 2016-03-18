@@ -1,0 +1,11 @@
+<!--SLIDE-->
+<?php echo $this->render('index/slider.phtml'); ?>
+<!--/SLIDE-->
+<div class="container">
+    <!--WIDGETS HOME-->
+    <section class="destaques-home">
+        <?php if (count($this->widget2)) echo $this->render('index/widget2.phtml'); ?>
+        <?php if (count($this->widget1)) echo $this->render('index/widget1.phtml'); ?>
+    <!--/WIDGETS HOME-->
+    </section>
+</div>

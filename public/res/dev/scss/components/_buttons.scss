@@ -1,0 +1,22 @@
+
+//
+// Abre o menu
+//
+
+.btn-menu {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2.8rem;
+  right: 10px;
+  padding: 0 0.5em;
+  position: absolute;
+  top: 22px;
+  z-index: 10;
+
+  -webkit-appearance: none;
+
+  @media (min-width: $screen-sm-min) {
+    display: none;
+  }
+}

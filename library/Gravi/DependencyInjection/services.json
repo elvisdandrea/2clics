@@ -1,0 +1,11 @@
+{
+    "vista_rest" : {
+        "classfile"     : "Plugins/Vista/VistaRest",
+        "requirements"  : [
+            "Plugins/Vista/Vista"
+        ]
+    },
+    "restclient" : {
+        "classfile"     : "Plugins/RestClient/RestClient"
+    }
+}
